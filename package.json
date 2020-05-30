@@ -1,5 +1,5 @@
 {
-  "name": "facturacion",
+  "name": "factura",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "-": "0.0.1",
     "@angular/animations": "~9.1.4",
     "@angular/common": "~9.1.4",
     "@angular/compiler": "~9.1.4",
@@ -19,7 +20,12 @@
     "@angular/platform-browser": "~9.1.4",
     "@angular/platform-browser-dynamic": "~9.1.4",
     "@angular/router": "~9.1.4",
+    "@popperjs/core": "^2.4.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
     "rxjs": "~6.5.4",
+    "save": "^2.4.0",
+    "sweetalert2": "^9.13.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

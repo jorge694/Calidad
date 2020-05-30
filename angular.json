@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "facturacion": {
+    "Factura": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/facturacion",
+            "outputPath": "dist/Factura",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,9 +28,15 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -66,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "facturacion:build"
+            "browserTarget": "Factura:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "facturacion:build:production"
+              "browserTarget": "Factura:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "facturacion:build"
+            "browserTarget": "Factura:build"
           }
         },
         "test": {
@@ -114,15 +120,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "facturacion:serve"
+            "devServerTarget": "Factura:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "facturacion:serve:production"
+              "devServerTarget": "Factura:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "facturacion"
+  "defaultProject": "Factura"
 }
